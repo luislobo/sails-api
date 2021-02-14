@@ -2,7 +2,7 @@
   "name": "api-next",
   "private": true,
   "version": "0.0.0",
-  "description": "a Sails application",
+  "description": "A demo API using Sails",
   "keywords": [],
   "dependencies": {
     "@sailshq/connect-redis": "^3.2.1",
@@ -15,10 +15,12 @@
     "sails-hook-sockets": "^2.0.0"
   },
   "devDependencies": {
-    "eslint": "5.16.0"
+    "eslint": "5.16.0",
+    "nodemon": "2.0.7"
   },
   "scripts": {
-    "start": "NODE_ENV=production node app.js",
+    "start-prod": "NODE_ENV=production node app.js",
+    "start": "NODE_ENV=development nodemon app.js",
     "test": "npm run lint && npm run custom-tests && echo 'Done.'",
     "lint": "./node_modules/eslint/bin/eslint.js . --max-warnings=0 --report-unused-disable-directives && echo '✔  Your .js files look good.'",
     "custom-tests": "echo \"(No other custom tests yet.)\" && echo"
@@ -28,8 +30,8 @@
     "type": "git",
     "url": "git://github.com/luis/api-next.git"
   },
-  "author": "luis",
-  "license": "",
+  "author": "Luis Lobo Borobia",
+  "license": "MIT",
   "engines": {
     "node": "^12.18"
   }
