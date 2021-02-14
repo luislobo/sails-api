@@ -1,7 +1,8 @@
 {
   "hooks": {
     "views": false,
-    "blueprints": false
+    "blueprints": false,
+    "grunt": false
   },
   "generators": {
     "modules": {}
