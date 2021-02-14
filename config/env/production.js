@@ -106,23 +106,6 @@ module.exports = {
   },
 
 
-
-  /**************************************************************************
-  *                                                                         *
-  * Always disable "shortcut" blueprint routes.                             *
-  *                                                                         *
-  * > You'll also want to disable any other blueprint routes if you are not *
-  * > actually using them (e.g. "actions" and "rest") -- but you can do     *
-  * > that in `config/blueprints.js`, since you'll want to disable them in  *
-  * > all environments (not just in production.)                            *
-  *                                                                         *
-  ***************************************************************************/
-  blueprints: {
-    shortcuts: false,
-  },
-
-
-
   /***************************************************************************
   *                                                                          *
   * Configure your security settings for production.                         *
