@@ -1,6 +1,5 @@
-
-const chalk = require('chalk')
-const ctx = new chalk.Instance({ level: 3 })
+const chalk = require('chalk');
+const ctx = new chalk.Instance({ level: 3 });
 
 let prevTime = 0;
 

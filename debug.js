@@ -38,7 +38,7 @@ const logger = require('pino')({
     errorLikeObjectKeys: ['err', 'error'],
     levelFirst: true,
     translateTime: 'yyyy-mm-dd\'T\'HH:MM:ss.l\'Z\'',
-    messageFormat: ({ns, msg, time}, messageKey, levelLabel) => {
+    messageFormat: ({ns, msg, time}) => {
       // get per namespace ms
       let msDiff = 0;
       if (nsTime[ns]) {
