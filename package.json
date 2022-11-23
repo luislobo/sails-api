@@ -15,7 +15,7 @@
     "pino-debug": "^2.0.0",
     "sails": "^1.4.0",
     "sails-hook-orm": "^3.0.1",
-    "sails-hook-sockets": "^2.0.0",
+    "sails-hook-sockets": "^2.0.3",
     "uuid": "^8.3.2"
   },
   "devDependencies": {
